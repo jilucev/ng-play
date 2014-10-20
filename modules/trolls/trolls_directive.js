@@ -1,7 +1,10 @@
 angular.module('treasureTrolls')
   .directive('trollsDirective', function () {
     return {
-      restrict: 'EA',
+      restrict: 'E',
+      scope: {
+        trollInfo: '=info'
+      },
       templateUrl: 'modules/trolls/trolls.html'
     }
   });

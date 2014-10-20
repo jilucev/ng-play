@@ -1,0 +1,353 @@
+/*candy palette:
+#F8F087
+#B7E3C0
+#B8D0DD
+#DBBAE5
+#F39DD4*/
+
+/*gumball palette:
+  background-color: #C6F7E4;
+
+  background-color: #E7FCD7;
+
+  background-color: #F4F799;
+
+  background-color: #FFE596;
+
+  background-color: #FFC296;*/
+
+body {
+  background-color: #6A7353;
+  background-size: cover;
+}
+
+[class^=div-],
+[class*=btn] {
+  cursor: pointer;
+}
+
+.div-start {
+  height: 90px;
+  width: 90px;
+  background-color: #FFB8CC;
+  display: block;
+}
+
+.div-one {
+  height: 90px;
+  width: 90px;
+  display: block;
+  background-color: #FC8383;
+}
+
+.div-two {
+  height: 90px;
+  width: 90px;
+  display: block;
+  background-color: #F39DD4;
+}
+
+.div-three {
+  height: 90px;
+  width: 90px;
+  display: block;
+  background-color: #F8F087;
+}
+
+.div-four {
+  height: 90px;
+  width: 90px;
+  display: block;
+  background-color: #B7E3C0;
+}
+
+.div-five {
+  height: 90px;
+  width: 90px;
+  display: block;
+  background-color: #B8D0DD;
+}
+
+.div-six {
+  height: 90px;
+  width: 90px;
+  display: block;
+  background-color: #DBBAE5;
+}
+
+.div-seven {
+  height: 90px;
+  width: 90px;
+  display: block;
+  background-color: #F39DD4;
+}
+
+.div-square {
+  height: 90px;
+  width: 90px;
+  border-radius: 0%;
+  background-color: #DBBAE5;
+}
+
+.div-circle {
+  height: 90px;
+  width: 90px;
+  background-color: #B8D0DD;
+  border-radius: 100%;
+}
+
+.gumball-one {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #C6F7E4;
+}
+
+.gumball-two {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #E7FCD7;
+}
+
+.gumball-two {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #F4F799;
+}
+
+.gumball-three {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #FFE596;
+}
+
+.gumball-four {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #FFC296;
+}
+
+.tea-1 {
+  color: #C9B085;
+}
+
+.tea-2 {
+  color: #9AC76D;
+}
+
+.tea-3 {
+  color: #AAE08B;
+}
+
+.tea-4 {
+  color: #68AB68;
+}
+
+.tea-5 {
+  color: #A18942;
+}
+
+.gumball-btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #FFC296;
+}
+
+.tea-btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #A18942;
+}
+
+.css-form input.ng-invalid.ng-dirty {
+  background-color: #FA787E;
+}
+
+.css-form input.ng-valid.ng-dirty {
+  background-color: #78FA89;
+}
+
+.ghost {
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+
+.ghost-hide {
+  visibility: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.beardspace {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.beard {
+  width: 30%;
+  margin: 50px;
+}
+
+.hide-beard {
+  width: 30%;
+  visibility: hidden;
+}
+
+.haiku {
+  font-style: italic;
+}
+
+.lumberjack-verse {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color:;
+}
+.spring {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Helvetica;
+  color:#F4F799;
+}
+.summer {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Helvetica;
+  color:#FFC296;
+}
+.fall {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Helvetica;
+  color:#FFE596;
+}
+.winter {
+  font-size: 3em;
+  display: inline-block;
+  font-weight: bold;
+  font-family: Helvetica;
+  color: #C6F7E4;
+}
+
+
+.rain-season {
+  position: relative;
+  -webkit-animation: rain infinite 3s ease-in-out;
+}
+
+.leaves-season {
+  position: relative;
+  -webkit-animation: leaves infinite 3s linear;
+}
+
+.sun-season {
+  position: relative;
+  -webkit-animation: sun infinite 3s ease-in-out;
+  }
+
+.snow-season {
+  position: relative;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+
+  -webkit-animation: snow 3s ease-in-out forwards;
+  animation: snow 3s ease-in-out forwards;
+}
+
+.leaves-season.rain-season {
+  -webkit-animation: rain infinite 3s ease-in-out, leaves infinite 3s linear;
+  animation: rain infinite 3s ease-in-out, leaves infinite 3s linear;
+}
+
+.leaves-season.sun-season {
+  -webkit-animation: sun infinite 3s ease-in-out, leaves infinite 3s linear;
+  animation: sun infinite 3s ease-in-out, leaves infinite 3s linear;
+}
+
+.leaves-season.snow-season {
+
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+
+  -webkit-animation: snow 3s ease-in-out forwards;
+  animation: snow 3s ease-in-out forwards;
+}
+
+@-webkit-keyframes rain {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 2em;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes leaves {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sun {
+  0% {
+    bottom: 0;
+    right: 0;
+  }
+
+  50% {
+    bottom: 2em;
+    right: 2em;
+  }
+
+  100% {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(100deg);
+    transform: rotate(100deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}

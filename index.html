@@ -1,0 +1,140 @@
+<html ng-app='myApp'>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+    <div ng-controller="headingCtrl">
+      <h1>{{ pageHeading | titleCase }}</h1>
+    </div>
+
+    <div ng-controller="colorCtrl">
+      <div class='div-{{color}}' ng-click="changeColor()"></div>
+    </div>
+
+    <div ng-controller="shapeCtrl">
+      <div class='div-{{shape}}' ng-click="changeShape()"></div>
+    </div>
+
+
+    <div ng-controller="gumballCtrl">
+      <div class="gumball-btn" ng-click="showGumballs = !showGumballs"></div>
+      <div class="gumball-{{gumball.number}}" ng-show = "showGumballs" ng-repeat="gumball in gumballs"></div>
+    </div>
+
+    <div ng-controller="teaVarietiesCtrl">
+      <div class="tea-btn" ng-click="showTeas = !showTeas"></div>
+      <div ng-show="showTeas" ng-repeat="tea in teas">
+        <span class="tea-{{$index + 1}}">{{$index + 1}} {{tea.name}}</span>
+      </div>
+    </div>
+
+    <div ng-controller="formController">
+      <form name="form" class="css-form" novalidate>
+
+        <div>
+          Fisherman Name: <input type="text" ng-model="fisherman.name" name="fName" required/>
+        </div>
+
+        <div>
+          Fisherman Email:<input type="email" ng-model="fisherman.email" name="fEmail" required/>
+        </div>
+
+        <div ng-show="form.fEmail.$dirty && form.fEmail.$invalid">Nay, matie:
+          <span ng-show="form.fEmail.$error.required">ya got ta have en email these days, mate.</span>
+          <span ng-show="form.fEmail.$error.email">That's notcher email, mate.</span>
+        </div>
+
+        <div>
+          Gender:
+          <ng-form name="genderSelect">
+            <input type="radio" ng-model="fisherman.gender" value="female" name="fGender" />female
+            <input type="radio" ng-model="fisherman.gender" value="male" name="fGender"/>male
+            <input type="radio" ng-model="fisherman.gender" value="merfish" name="fGender" />merfish
+          </ng-form>
+        </div>
+        {{ form.fGender.$dirty }}
+        <span ng-show="form.genderSelect.$dirty && fisherman.gender != 'merfish'">pity y'aint a merfish.</span>
+        <span ng-show="form.genderSelect.$dirty && fisherman.gender == 'merfish'">A hearty welcome te ye, Merfish.</span>
+      </div>
+
+      <div>
+        Garb: <input type="radio" ng-model="fisherman.garb" value="fair_isle_sweater"/>fair isle sweater
+        <input type="radio" ng-model="fisherman.garb" value="rain_slicker"/>rain slicker
+      </div>
+      </br>
+
+      <button ng-click="reset()">RESET</button>
+      <button ng-click="update(fisherman)">SAVE</button>
+    </form>
+    <pre>form = {{fisherman | json}}</pre>
+    <pre>master = {{master | json}}</pre>
+  </div>
+
+<!--   <lumber-jack></lumber-jack>
+
+  <ghost class='ghost' hide='ghost-hide'>
+    <img src="https://38.media.tumblr.com/23ba86d3d1c26c9013f908567a5cf179/tumblr_na9srq6uz31sj5r1lo1_500.gif"/>
+  </ghost>
+
+  <div class='seasons'>
+    <season class="spring" rain>Spring</season>
+    <season class="summer" leaves sun>Summer</season>
+    <season class="fall" leaves rain>Fall</season>
+    <season class="winter" snow>Winter</season>
+  </div>
+
+  <img beard fresh-src='http://i.dailymail.co.uk/i/pix/2011/08/05/article-0-0D50101800000578-30_468x286.jpg' class="beard" src="http://i.dailymail.co.uk/i/pix/2014/07/18/article-2697596-1FBAE3B400000578-608_634x809.jpg"/> -->
+
+  <haiku class="haiku">
+    <p>I have done in different rooms</p>
+  </haiku>
+
+  <country>
+    <province>
+      <city>
+      </city>
+    </province>
+  </country>
+
+
+  <accordion>
+    <expander class='expander' ng-repeat="expander in expanders" expander-title='expander.title'>
+      {{expander.text}}
+    </expander>
+  </accordion>
+
+  <div ng-controller="trollsCtrl">
+    <trolls-directive></trolls-directive>
+  </div>
+
+<!-- <span draggable>Drag ME</span> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+  <script src='modules/color/color_controller.js'></script>
+  <script src='modules/heading/heading_controller.js'></script>
+  <script src='modules/shape/shape_controller.js'></script>
+  <script src='modules/gumball/gumball_controller.js'></script>
+  <script src='modules/tea_varieties/tea_varieties_controller.js'></script>
+  <script src='modules/fisherman/fisherman_controller.js'></script>
+  <script src='modules/title_case/title_case_filter.js'></script>
+  <script src='modules/lumber_jack/lumber_jack_directive.js'></script>
+  <script src='modules/lumber_jack/song/song_directive.js'></script>
+  <script src='modules/ghost/ghost_directive.js'></script>
+  <script src='modules/beard/beard_directive.js'></script>
+  <script src='modules/season/season_directive.js'></script>
+  <script src='modules/haiku/haiku_directive.js'></script>
+  <script src='modules/country/country_directive.js'></script>
+  <script src='modules/country/city/city_directive.js'></script>
+  <script src='modules/country/province/province_directive.js'></script>
+  <script src='modules/accordion/accordion_directive.js'></script>
+  <script src='modules/accordion/expander/expander_directive.js'></script>
+  <!-- // <script src='modules/accordion/expander/expander_controller.js'></script> -->
+<!--   // <script src='modules/drag/drag_directive.js'></script> -->
+  <script src='modules/trolls/trolls_controller.js'></script>
+  <script src='modules/trolls/trolls_directive.js'></script>
+
+  <script src="app.js"></script>
+  </body>
+</html>

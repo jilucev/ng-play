@@ -351,3 +351,31 @@ img {
     transform: rotate(90deg);
   }
 }
+.button {
+/*  height: 30px;
+  width: 80px;
+  background-color:  #F39DD4;*/
+  box-shadow: inset 0 -5px rgba(0,0,0,0.1);
+  color: white;
+  font-size: 1.8em;
+  border-color: #f0776c;
+  background-color: #f0776c;
+  border-radius: 5px;
+  width: 15%;
+  min-height: 45px;
+  text-align: center;
+}
+
+div.shelf {
+  border-radius: 5px 5px 0 0;
+  background-color: #e8e2df;
+  height: 50px;
+  width: 100%;
+}
+
+div.rainbow {
+  height: 30px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(left, #c4e17f 0%,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4 100%);
+  border-radius: 5px;
+}

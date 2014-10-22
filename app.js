@@ -14,4 +14,7 @@ angular.module('myApp', [
   'accordionModule',
   // 'drag',
   'treasureTrolls',
+  'docsTimeDirective',
+  'communist',
+  'drinkModule',
   'titleCase'])

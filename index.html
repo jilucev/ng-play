@@ -5,6 +5,23 @@
   </head>
 
   <body>
+<div class="rainbow"></div>
+<div class="shelf"></div>
+
+<div ng-model="communist" ng-controller="workerCtrl">
+<worker done="logChore(chore)"></worker>
+</div>
+
+<div ng-app="drinkModule">
+  <div ng-controller="drinkCtrl">
+    <input type="text" ng-model="ctrlFlavor">
+    Flave is:{{ctrlFlavor}}<div drink flavor="{{ ctrlFlavor }}"></div>
+  </div>
+</div>
+<!--   <div ng-controller="Controller">
+  Date format: <input ng-model="format"> <hr/>
+  Current time is: <span my-current-time="format"></span>
+</div> -->
 
     <div ng-controller="headingCtrl">
       <h1>{{ pageHeading | titleCase }}</h1>
@@ -73,7 +90,7 @@
     <pre>master = {{master | json}}</pre>
   </div>
 
-<!--   <lumber-jack></lumber-jack>
+  <lumber-jack></lumber-jack>
 
   <ghost class='ghost' hide='ghost-hide'>
     <img src="https://38.media.tumblr.com/23ba86d3d1c26c9013f908567a5cf179/tumblr_na9srq6uz31sj5r1lo1_500.gif"/>
@@ -86,7 +103,7 @@
     <season class="winter" snow>Winter</season>
   </div>
 
-  <img beard fresh-src='http://i.dailymail.co.uk/i/pix/2011/08/05/article-0-0D50101800000578-30_468x286.jpg' class="beard" src="http://i.dailymail.co.uk/i/pix/2014/07/18/article-2697596-1FBAE3B400000578-608_634x809.jpg"/> -->
+  <img beard fresh-src='http://i.dailymail.co.uk/i/pix/2011/08/05/article-0-0D50101800000578-30_468x286.jpg' class="beard" src="http://i.dailymail.co.uk/i/pix/2014/07/18/article-2697596-1FBAE3B400000578-608_634x809.jpg"/>
 
   <haiku class="haiku">
     <p>I have done in different rooms</p>
@@ -107,7 +124,8 @@
   </accordion>
 
   <div ng-controller="trollsCtrl">
-    <trolls-directive></trolls-directive>
+    <trolls-directive info="edward"></trolls-directive>
+    <trolls-directive info="jeremy"></trolls-directive>
   </div>
 
 <!-- <span draggable>Drag ME</span> -->
@@ -134,6 +152,12 @@
 <!--   // <script src='modules/drag/drag_directive.js'></script> -->
   <script src='modules/trolls/trolls_controller.js'></script>
   <script src='modules/trolls/trolls_directive.js'></script>
+  <!-- // <script src='modules/trolls/trolls.html'></script> -->
+  <script src='modules/time/timer_directive.js'></script>
+  <script src='modules/communist/communist_directive.js'></script>
+  <script src='modules/communist/communist_controller.js'></script>
+  <script src='modules/drink/drink_controller.js'></script>
+  <script src='modules/drink/drink_directive.js'></script>
 
   <script src="app.js"></script>
   </body>

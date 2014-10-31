@@ -26,6 +26,11 @@ body {
   cursor: pointer;
 }
 
+[class^=div-],
+[class*=button] {
+  cursor: pointer;
+}
+
 .div-start {
   height: 90px;
   width: 90px;
@@ -378,4 +383,14 @@ div.rainbow {
   width: 100%;
   background-image: -webkit-linear-gradient(left, #c4e17f 0%,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4 100%);
   border-radius: 5px;
+}
+
+.alert-class {
+  border: 10px solid white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, .6);
+  content:url('http://www.smart.co.uk/dreams/fell1.jpg');
+}
+
+.lala {
+  visibility: hidden;
 }

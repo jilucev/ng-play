@@ -21,5 +21,6 @@ angular.module('myApp', [
   'phoneModule',
   // 'gossipModule',
   'triviaModule',
+  'squirtModule',
   // 'titleCase'
   ])

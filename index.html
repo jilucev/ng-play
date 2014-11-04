@@ -7,9 +7,15 @@
 
   <body>
     
-<div ng-app="triviaModule">
+<!-- <div ng-app="triviaModule">
   Win a prize: Who directed "8 1/2" and "La Dolce Vita"?
   <smart-password></smart-password>
+</div> -->
+
+<div ng-app = "squirtModule">
+  <div ng-controller="squirtCtrl">
+    <div class="button" ng-click="squirtCtrl.squirtWater()">squirt!</div>
+  </div>
 </div>
 <!-- 
   <div ng-app="gossipModule">
@@ -197,6 +203,8 @@
   <script src='modules/phone/phone_directive.js'></script>
   <script src='modules/gossip/gossip_controller.js'></script>
   <script src='modules/gossip/gossip_directive.js'></script>
+  <script src='modules/squirt/squirt_controller.js'></script>
+
   <!-- // <script src='modules/password/password_directive.js'></script> -->
   <script src='modules/trivia/trivia_directive.js'></script>
 

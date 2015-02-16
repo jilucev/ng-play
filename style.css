@@ -199,6 +199,12 @@ img {
   display: inline-block;
 }
 
+.beard-wrapper {
+  height: 230px;
+  display: inline-block;
+  padding: 0;
+}
+
 .beard {
   width: 30%;
   margin: 50px;

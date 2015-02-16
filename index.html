@@ -7,40 +7,41 @@
 
   <body>
     
-<!-- <div ng-app="triviaModule">
+<div ng-app="triviaModule">
   Win a prize: Who directed "8 1/2" and "La Dolce Vita"?
   <smart-password></smart-password>
-</div> -->
+</div>
 
 <div ng-app = "squirtModule">
   <div ng-controller="squirtCtrl">
     <div class="button" ng-click="squirtCtrl.squirtWater()">squirt!</div>
   </div>
 </div>
-<!-- 
+
   <div ng-app="gossipModule">
     <h1>Broken: Gossip</h1>
     <gossip></gossip>
-  </div> -->
-<!-- <div class="rainbow"></div>
-<div class="shelf"></div> -->
+  </div>
 
-<!-- <div>
+<div class="rainbow"></div>
+<div class="shelf"></div>
+
+<div>
   Number: {{number}}
   Network:<select ng-model="network" ng-options="net for net in networks"></select>
 </div>
 <input type="text" ng-model="value">
 <div class="button" ng-click="makeCall({message: value, number: number})">
   Call home!
-</div> -->
-<!-- <div ng-app="phoneModule">
+</div>
+<div ng-app="phoneModule">
   <div ng-controller="phoneCtrl">
     Whisper something in my ear an'I'll shout it out
     <div phone dial="callHome(message)"></div>
   </div>
-</div> -->
+</div>
 
-<!-- <div ng-model="communist" ng-controller="workerCtrl">
+<div ng-model="communist" ng-controller="workerCtrl">
 <worker done="logChore(chore)"></worker>
 </div>
 
@@ -49,21 +50,21 @@
     <input type="text" ng-model="ctrlFlavor">
     Flave is:{{ctrlFlavor}}<div drink flavor="{{ ctrlFlavor }}"></div>
   </div>
-</div> -->
+</div>
 
-<!-- <div ng-app="skittlesModule">
+<div ng-app="skittlesModule">
   <div ng-controller="skittlesCtrl">
     <input type="text" ng-model="ctrlTaste">
     SkittleTaste is: {{ctrlTaste}}<div skittles taste="ctrlTaste"></div>
   </div>
-</div> -->
+</div>
 
-<!--   <div ng-controller="Controller">
+  <div ng-controller="Controller">
   Date format: <input ng-model="format"> <hr/>
   Current time is: <span my-current-time="format"></span>
-</div> -->
+</div>
 
-   <!--  <div ng-controller="headingCtrl">
+    <div ng-controller="headingCtrl">
       <h1>{{ pageHeading | titleCase }}</h1>
     </div>
 
@@ -86,9 +87,9 @@
       <div ng-show="showTeas" ng-repeat="tea in teas">
         <span class="tea-{{$index + 1}}">{{$index + 1}} {{tea.name}}</span>
       </div>
-    </div> -->
+    </div>
 
-  <!--   <div ng-controller="formController">
+    <div ng-controller="formController">
       <form name="form" class="css-form" novalidate>
 
         <div>
@@ -121,8 +122,8 @@
         Garb: <input type="radio" ng-model="fisherman.garb" value="fair_isle_sweater"/>fair isle sweater
         <input type="radio" ng-model="fisherman.garb" value="rain_slicker"/>rain slicker
       </div>
-      </br> -->
-<!-- 
+      </br>
+
       <button ng-click="reset()">RESET</button>
       <button ng-click="update(fisherman)">SAVE</button>
     </form>
@@ -141,9 +142,9 @@
     <season class="summer" leaves sun>Summer</season>
     <season class="fall" leaves rain>Fall</season>
     <season class="winter" snow>Winter</season>
-  </div> -->
+  </div>
 
-<!--   <img beard fresh-src='http://i.dailymail.co.uk/i/pix/2011/08/05/article-0-0D50101800000578-30_468x286.jpg' class="beard" src="http://i.dailymail.co.uk/i/pix/2014/07/18/article-2697596-1FBAE3B400000578-608_634x809.jpg"/>
+  <img beard fresh-src='http://i.dailymail.co.uk/i/pix/2011/08/05/article-0-0D50101800000578-30_468x286.jpg' class="beard" src="http://i.dailymail.co.uk/i/pix/2014/07/18/article-2697596-1FBAE3B400000578-608_634x809.jpg"/>
 
   <haiku class="haiku">
     <p>I have done in different rooms</p>
@@ -155,9 +156,9 @@
       </city>
     </province>
   </country>
- -->
 
-<!--   <accordion>
+
+  <accordion>
     <expander class='expander' ng-repeat="expander in expanders" expander-title='expander.title'>
       {{expander.text}}
     </expander>
@@ -166,7 +167,7 @@
   <div ng-controller="trollsCtrl">
     <trolls-directive info="edward"></trolls-directive>
     <trolls-directive info="jeremy"></trolls-directive>
-  </div> -->
+  </div>
 
 <!-- <span draggable>Drag ME</span> -->
   <script src='modules/color/color_controller.js'></script>
@@ -175,7 +176,7 @@
   <script src='modules/gumball/gumball_controller.js'></script>
   <script src='modules/tea_varieties/tea_varieties_controller.js'></script>
   <script src='modules/fisherman/fisherman_controller.js'></script>
-<!--   // <script src='modules/title_case/title_case_filter.js'></script>
+  // <script src='modules/title_case/title_case_filter.js'></script>
   // <script src='modules/lumber_jack/lumber_jack_directive.js'></script>
   // <script src='modules/lumber_jack/song/song_directive.js'></script>
   // <script src='modules/ghost/ghost_directive.js'></script>
@@ -186,12 +187,12 @@
   // <script src='modules/country/city/city_directive.js'></script>
   // <script src='modules/country/province/province_directive.js'></script>
   // <script src='modules/accordion/accordion_directive.js'></script>
-  // <script src='modules/accordion/expander/expander_directive.js'></script> -->
-  <!-- // <script src='modules/accordion/expander/expander_controller.js'></script> -->
+  // <script src='modules/accordion/expander/expander_directive.js'></script>
+  // <script src='modules/accordion/expander/expander_controller.js'></script>
 <!--   // <script src='modules/drag/drag_directive.js'></script> -->
-<!--   // <script src='modules/trolls/trolls_controller.js'></script>
-  // <script src='modules/trolls/trolls_directive.js'></script> -->
-  <!-- // <script src='modules/trolls/trolls.html'></script> -->
+  // <script src='modules/trolls/trolls_controller.js'></script>
+  // <script src='modules/trolls/trolls_directive.js'></script>
+  // <script src='modules/trolls/trolls.html'></script>
   <script src='modules/time/timer_directive.js'></script>
   <script src='modules/communist/communist_directive.js'></script>
   <script src='modules/communist/communist_controller.js'></script>

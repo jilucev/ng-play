@@ -11,3 +11,9 @@ ng-pristine
 ng-dirty
 ng-touched
 ng-untouched
+
+FOR AWESOME INFO ON $watch and practical examples:
+
+https://dl.dropboxusercontent.com/u/108322922/AngularJS.pdf
+
+p. 29 "Observing Model Changes with Watch"
